@@ -1,0 +1,206 @@
+header {
+  background: linear-gradient(150deg, rgb(137, 207, 97), rgb(238, 238, 238));
+  padding: 40px;
+  text-align: center;
+}
+
+header img {
+  border-radius: 20%;
+  border: 2px solid #f1fff1;
+  width: 120px;
+  height: 120px;
+  filter: drop-shadow(1px 1px 8px rgb(113, 136, 71));
+}
+
+header p {
+  color: #050505;
+  font-weight: bolder;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f8f8;
+  color: #333;
+}
+
+nav {
+  background: linear-gradient(150deg, rgb(137, 207, 97), rgb(238, 238, 238));
+  text-align: center;
+  padding: 20px;
+  top: 0;
+      position: sticky;
+          z-index: 1000;
+
+
+}
+
+nav a {
+  color: rgb(0, 0, 0);
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+section {
+  padding: 40px 20px 20px;
+}
+
+.titleSection {
+  background: linear-gradient(150deg, rgb(137, 207, 97), rgb(238, 238, 238));
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: bolder;
+  padding: 10px 15px;
+  display: inline-block;
+  border-right: 6px solid #6ABC6A;
+}
+
+.menu-gr {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+  padding: 0 10px;
+}
+
+.menu-grr {
+  display: flex;
+  margin: 10px;
+  gap: 10px;
+  padding: 5px;
+  flex-wrap: wrap; /* يخلي العناصر تنتقل للسطر الجديد لو ضاق المكان */
+  justify-content: center; /* يوزع العناصر في الوسط */
+}
+
+.menu-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu-card img {
+  align-self: center;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.menu-card:hover {
+  transform: translateY(-8px);
+}
+
+.menu-card h4 {
+  margin: 0 0 10px 0;
+  color: #6ABC6A;
+  font-weight: 700;
+}
+
+.menu-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.styled-select {
+  padding: 12px 22px;
+  width: 150px;
+  align-items: center;
+  align-self: center;
+  font-weight: bolder;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 16px;
+  color: #000000;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-size: 16px;
+  padding-left: 10px;
+  cursor: pointer;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.styled-select:focus {
+  border-color: #5c9ded;
+  box-shadow: 0 0 5px rgba(92, 157, 237, 0.5);
+  outline: none;
+}
+
+option {
+  direction: rtl;
+}
+
+footer {
+  background: linear-gradient(150deg, rgb(137, 207, 97), rgb(238, 238, 238));
+  padding: 20px;
+  text-align: center;
+  font-weight: inherit;
+}
+
+
+
+.we_aree h1 {
+
+text-align: center;
+
+}
+
+
+.card-weAre {
+
+ background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/* --- Media Queries للشاشات الصغيرة --- */
+@media (max-width: 768px) {
+  nav a {
+    margin: 0 10px;
+    font-size: 14px;
+  }
+  .menu-gr {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+  }
+  .menu-card img {
+    height: 150px;
+    width: 150px;
+  }
+  .styled-select {
+    width: 100%;
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+    margin: 0 5px;
+    font-size: 13px;
+  }
+  .menu-gr {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+  }
+  .menu-card img {
+    height: 120px;
+    width: 120px;
+  }
+}
